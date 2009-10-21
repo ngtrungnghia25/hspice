@@ -1,8 +1,8 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "12:52:48 10/21/2009 "
-* "netlist" "e:\programing\hspice\practice_01\cau2.sp "
+* "rundate" "12:54:54 10/21/2009 "
+* "netlist" "e:\programing\hspice\practice_01\cau3.sp "
 * "runtitle" ".option post"
 * time =    0.            
 * temperature =   25.0000        
@@ -10,5 +10,6 @@
 .option 
 + gmindc=   1.0000p       
 .nodeset
-+ 1 =  -5.0000        
++ 1 =   5.0000        
++ 2 = 716.5930m       
 ***   END: Saved Operating Point ***                     
