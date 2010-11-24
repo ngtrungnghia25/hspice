@@ -1,4 +1,5 @@
-.include '90nm.sp'
+.title_or_gate
+.include '180nm.pm'
 .option post
 M1	1	A	out	out	NMOS W=100n L=50n
 M2	out	B	1	1	NMOS W=100n L=50n

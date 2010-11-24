@@ -1,4 +1,5 @@
-.include '90nm.sp'
+.title_and_gate
+.include '180nm.pm'
 .option post
 Vcc 	Vcc	gnd 	dc	5
 M1	1	A	out	out	NMOS W=100n L=50n

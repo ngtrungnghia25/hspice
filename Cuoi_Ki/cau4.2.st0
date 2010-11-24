@@ -3,7 +3,7 @@
  lic:
  lic: FLEXlm: v8.5b
  lic: USER:   TRUNG-NGHIA          HOSTNAME: TRUNG-NGHIA
- lic: HOSTID: "3085a9995677 503eaa4bfef2 523eaa4bfef2 503eaa4bfef2" PID:      28
+ lic: HOSTID: "3085a9995677 503eaa4bfef2 523eaa4bfef2 503eaa4bfef2" PID:      99
  lic: Using FLEXlm license file:
  lic: C:\Flexlm\Hspice_2007-09.lic
  lic: Checkout 1 hspice
@@ -11,12 +11,12 @@
  lic: NODE LOCKED license on hostid "3085a9995677 503eaa4bfef2 523eaa4bfef2 503e
  lic:
  Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
- init: begin read circuit files,  cpu clock=  6.30E-02
+ init: begin read circuit files,  cpu clock=  7.80E-02
        option post
  init: end read circuit files,  cpu clock=  7.80E-02 memory=    145 kb
  init: begin check errors,  cpu clock=  7.80E-02
- init: end check errors,  cpu clock=  7.80E-02 memory=    145 kb
- init: begin setup matrix, pivot=    10 cpu clock=  7.80E-02
+ init: end check errors,  cpu clock=  9.40E-02 memory=    145 kb
+ init: begin setup matrix, pivot=    10 cpu clock=  9.40E-02
 >error          ***** hspice job aborted
  Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
  lic: Release hspice token(s)

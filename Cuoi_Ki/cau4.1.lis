@@ -13,6 +13,129 @@
 
 
 
+ .include '180nm.pm'
+ * http://ptm.asu.edu
+ * predictive technology model beta version
+ * 180nm nmos spice parametersv (normal one)
+ *
+
+ .model nmos nmos
+ +level = 49
+
+ +lint = 4.e-08 tox = 4.e-09 
+ +vth0 = 0.3999 rdsw = 250 
+
+ +lmin=1.8e-7 lmax=1.8e-7 wmin=1.8e-7 wmax=1.0e-4 tref=27.0 version =3.1
+ +xj= 6.0000000e-08         nch= 5.9500000e+17 
+ +lln= 1.0000000            lwn= 1.0000000              wln= 0.00
+ +wwn= 0.00                 ll= 0.00
+ +lw= 0.00                  lwl= 0.00                   wint= 0.00
+ +wl= 0.00                  ww= 0.00                    wwl= 0.00
+ +mobmod=  1                binunit= 2                  xl=  0
+ +xw=  0                    binflag=  0
+ +dwg= 0.00                 dwb= 0.00 
+
+ +k1= 0.5613000               k2= 1.0000000e-02 
+ +k3= 0.00                  dvt0= 8.0000000             dvt1= 0.7500000 
+ +dvt2= 8.0000000e-03       dvt0w= 0.00                 dvt1w= 0.00 
+ +dvt2w= 0.00               nlx= 1.6500000e-07          w0= 0.00 
+ +k3b= 0.00                 ngate= 5.0000000e+20 
+
+ +vsat= 1.3800000e+05       ua= -7.0000000e-10          ub= 3.5000000e-18 
+ +uc= -5.2500000e-11        prwb= 0.00 
+ +prwg= 0.00                wr= 1.0000000               u0= 3.5000000e-02 
+ +a0= 1.1000000             keta= 4.0000000e-02         a1= 0.00 
+ +a2= 1.0000000             ags= -1.0000000e-02         b0= 0.00 
+ +b1= 0.00 
+
+ +voff= -0.12350000          nfactor= 0.9000000          cit= 0.00 
+ +cdsc= 0.00                cdscb= 0.00                 cdscd= 0.00 
+ +eta0= 0.2200000           etab= 0.00                  dsub= 0.8000000 
+
+ +pclm= 5.0000000e-02       pdiblc1= 1.2000000e-02      pdiblc2= 7.5000000e-03 
+ +pdiblcb= -1.3500000e-02   drout= 1.7999999e-02        pscbe1= 8.6600000e+08 
+ +pscbe2= 1.0000000e-20     pvag= -0.2800000            delta= 1.0000000e-02 
+ +alpha0= 0.00              beta0= 30.0000000 
+
+ +kt1= -0.3700000           kt2= -4.0000000e-02         at= 5.5000000e+04 
+ +ute= -1.4800000           ua1= 9.5829000e-10          ub1= -3.3473000e-19 
+ +uc1= 0.00                 kt1l= 4.0000000e-09         prt= 0.00 
+
+ +cj= 0.00365               mj= 0.54                    pb= 0.982
+ +cjsw= 7.9e-10             mjsw= 0.31                  php= 0.841
+ +cta= 0                    ctp= 0                      pta= 0
+ +ptp= 0                    js=1.50e-08                 jsw=2.50e-13
+ +n=1.0                     xti=3.0                     cgdo=2.786e-10
+ +cgso=2.786e-10            cgbo=0.0e+00                capmod= 2
+ +nqsmod= 0                 elm= 5                      xpart= 1
+ +cgsl= 1.6e-10             cgdl= 1.6e-10               ckappa= 2.886
+ +cf= 1.069e-10             clc= 0.0000001              cle= 0.6
+ +dlc= 4e-08                dwc= 0                      vfbcv= -1
+  **warning** (180nm.pm:12)  model nmos            device geometries will not be checked against the limits set bylmin, lmax, wmin and wmax. To enable this check, add a period(.)to the model name(i.e. enable model selector).
+
+
+ *
+ * predictive technology model beta version
+ * 180nm pmos spice parametersv (normal one)
+ *
+
+ .model pmos pmos
+ +level = 49
+
+ +lint = 3.e-08 tox = 4.2e-09 
+ +vth0 = -0.42 rdsw = 450 
+
+ +lmin=1.8e-7 lmax=1.8e-7 wmin=1.8e-7 wmax=1.0e-4 tref=27.0 version =3.1
+ +xj= 7.0000000e-08         nch= 5.9200000e+17 
+ +lln= 1.0000000            lwn= 1.0000000              wln= 0.00
+ +wwn= 0.00                 ll= 0.00
+ +lw= 0.00                  lwl= 0.00                   wint= 0.00
+ +wl= 0.00                  ww= 0.00                    wwl= 0.00
+ +mobmod=  1                binunit= 2                  xl= 0.00
+ +xw= 0.00                  
+ +binflag=  0               dwg= 0.00                   dwb= 0.00 
+
+ +acm= 0                    ldif=0.00                   hdif=0.00
+ +rsh= 0                    rd= 0                       rs= 0
+ +rsc= 0                    rdc= 0
+
+ +k1= 0.5560000             k2= 0.00 
+ +k3= 0.00                  dvt0= 11.2000000            dvt1= 0.7200000 
+ +dvt2= -1.0000000e-02      dvt0w= 0.00                 dvt1w= 0.00 
+ +dvt2w= 0.00               nlx= 9.5000000e-08          w0= 0.00 
+ +k3b= 0.00                 ngate= 5.0000000e+20 
+
+ +vsat= 1.0500000e+05       ua= -1.2000000e-10          ub= 1.0000000e-18 
+ +uc= -2.9999999e-11        prwb= 0.00 
+ +prwg= 0.00                wr= 1.0000000               u0= 8.0000000e-03 
+ +a0= 2.1199999             keta= 2.9999999e-02         a1= 0.00 
+ +a2= 0.4000000             ags= -0.1000000             b0= 0.00 
+ +b1= 0.00 
+
+ +voff= -6.40000000e-02      nfactor= 1.4000000          cit= 0.00 
+ +cdsc= 0.00                cdscb= 0.00                 cdscd= 0.00 
+ +eta0= 8.5000000           etab= 0.00                  dsub= 2.8000000 
+
+ +pclm= 2.0000000           pdiblc1= 0.1200000          pdiblc2= 8.0000000e-05 
+ +pdiblcb= 0.1450000        drout= 5.0000000e-02        pscbe1= 1.0000000e-20 
+ +pscbe2= 1.0000000e-20     pvag= -6.0000000e-02        delta= 1.0000000e-02 
+ +alpha0= 0.00              beta0= 30.0000000 
+
+ +kt1= -0.3700000           kt2= -4.0000000e-02         at= 5.5000000e+04 
+ +ute= -1.4800000           ua1= 9.5829000e-10          ub1= -3.3473000e-19 
+ +uc1= 0.00                 kt1l= 4.0000000e-09         prt= 0.00 
+
+ +cj= 0.00138               mj= 1.05                    pb= 1.24
+ +cjsw= 1.44e-09            mjsw= 0.43                  php= 0.841
+ +cta= 0.00093              ctp= 0                      pta= 0.00153
+ +ptp= 0                    js=1.50e-08                 jsw=2.50e-13
+ +n=1.0                     xti=3.0                     cgdo=2.786e-10
+ +cgso=2.786e-10            cgbo=0.0e+00                capmod= 2
+ +nqsmod= 0                 elm= 5                      xpart= 1
+ +cgsl= 1.6e-10             cgdl= 1.6e-10               ckappa= 2.886
+ +cf= 1.058e-10             clc= 0.0000001              cle= 0.6
+ +dlc= 3e-08                dwc= 0                      vfbcv= -1
+  **warning** (180nm.pm:65)   model pmos is not used in netlist
  .option post
  vcc 	vcc	gnd 	dc	5
  m1	1	a	out	out	nmos w=100n l=50n
@@ -21,10 +144,6 @@
  va	a	gnd	pulse (0 1 0 0.05n 0.05n 1n 4n)
  vb	b	gnd	pulse (0 1 0 0.05n 0.05n 1n 2n)
  .tran 1n 10n
-
- **error** model name nmos in the element     0:m1
- is not defined.
-
 
  ***********************************************************************
  ** runlvl is invoked, you can disable it by:
@@ -49,31 +168,134 @@
        runlvl= 3       bypass= 2      mbypass=   2.00   bytol= 100.00u
  ***********************************************************************
 
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ .title_and_gate                                                                
+  ******  mos   model parameters           tnom=  25.000 temp=  25.000          
+ ******  
+ ***************************************************************************
+ ***        model parameters  model name:   0:nmos     model type:nmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+       hspver=    2006.03               level=         49         
+      version=        3.1            paramchk=          0         
+       apwarn=          1                lite=          0         
+       vgslim=          0             binUnit=          2         
+       capMod=          2               xpart=          1         
+       mobMod=          1              nqsMod=          0         
+       stiMod=          0                 elm=          5         
+     sfvtflag=          0                 tox=     4e-009 meter   
+           xj=     6e-008 meter       binflag=          0         
+         lmin=   1.8e-007 meter          lmax=   1.8e-007 meter   
+         wmin=   1.8e-007 meter          wmax=     0.0001 meter   
+         lref=          0 meter          wref=          0 meter   
+         lint=     4e-008 meter          wint=          0 meter   
+        lmult=          1               wmult=          1         
+           ll=          0                 lln=          1         
+           lw=          0                 lwn=          1         
+          lwl=          0                  wl=          0         
+          wln=          0                  ww=          0         
+          wwn=          0                 wwl=          0         
+          dwg=          0 m/V             dwb=          0 m/V^1/2 
+           a0=        1.1                 ags=      -0.01 V^-1    
+           b0=          0 meter            b1=          0 meter   
+         keta=       0.04 V^-1           voff=    -0.1235 V       
+        ngate=     5e+020 cm^-3           vbx=          0 V       
+          vbm=         -3 V                xt=  1.55e-007 meter   
+         vth0=     0.3999 V               nch=  5.95e+017 cm^-3   
+         nsub=     6e+016 cm^-3           nlx=  1.65e-007 meter   
+       gamma1=          0 V^-1/2       gamma2=          0 V^-1/2  
+           k1=     0.5613 V^1/2            k2=       0.01         
+           k3=          0                 k3b=          0 V^-1    
+           w0=          0 meter          dvt0=          8         
+         dvt1=       0.75                dvt2=      0.008 V^-1    
+        dvt0w=          0 meter^-1      dvt1w=          0 meter^-1
+        dvt2w=          0 V^-1           dsub=        0.8         
+         eta0=       0.22                etab=          0 V^-1    
+           u0=      0.035 m^2/V/sec         ua=    -7e-010 m/V     
+           ub=   3.5e-018 (m/V)^2          uc= -5.25e-011 V^-1    
+         vsat=     138000 m/sec            a1=          0 v^-1    
+           a2=          1               delta=       0.01 V       
+         rdsw=        250 ohm-um         prwg=          0 V^-1    
+         prwb=          0 V^-1/2           wr=          1         
+         pclm=       0.05             pdiblc1=      0.012         
+      pdiblc2=     0.0075             pdiblcb=    -0.0135 V^-1    
+       pscbe1=  8.66e+008 V/m          pscbe2=     1e-020 V/m     
+        drout=      0.018                pvag=      -0.28         
+      nfactor=        0.9                cdsc=          0 f/m^2   
+        cdscb=          0 f/V/m^2       cdscd=          0 f/V/m^2 
+          cit=          0 f/m^2        alpha0=          0 m/V     
+        beta0=         30 V               dlc=     4e-008 meter   
+          dwc=          0 meter           clc=     1e-007 meter   
+          cle=        0.6                cgso= 2.786e-010 f/m     
+         cgdo= 2.786e-010 f/m            cgbo=          0 f/m     
+         cgsl=   1.6e-010 f/m            cgdl=   1.6e-010 f/m     
+       ckappa=      2.886                  cf= 1.069e-010 f/m     
+         tnom=     300.15 K               kt1=      -0.37 V       
+         kt1l=     4e-009                 kt2=      -0.04         
+          ute=      -1.48                 ua1=9.5829e-010 m/V     
+          ub1=-3.3473e-019 (m/V)^2         uc1=          0 m/V^2   
+           at=      55000 m/s             prt=          0         
+          using Berkeley noise model       noiMod=          1         
+         noia=     1e+020                noib=      50000         
+         noic=  -1.4e-012                  em=   4.1e+007         
+           ef=          1                  af=          1         
+           kf=          0              gdsnoi=-1.23457e-029         
+          using Hspice diodes            using ACM 
+          acm=         0                 hdif=         0 meter    
+         ldif=         0 meter             js=  1.5e-008 amp/m^2  
+          jsw=  2.5e-013 amp/m            xti=         3          
+            n=         1                   cj=   0.00365 f/m^2    
+           mj=      0.54                   pb=     0.982 V        
+         cjsw=  7.9e-010 f/m             mjsw=      0.31          
+          php=     0.841 V               pbsw (not used)           
+       cjgate=  7.9e-010 f/m            cjswg (not used)           
+        mjswg (not used)                 pbswg (not used)           
+
+ **warning** dc voltage reset to initial transient source value
+             in source        0:va                  new dc=  0.0000D+00
+
+
+ **warning** dc voltage reset to initial transient source value
+             in source        0:vb                  new dc=  0.0000D+00
+
+  
+  BSIM3 Fatal **error** Effective channel length <= 0
+  BSIM3 Fatal **error** Effective channel length for C-V <= 0
+  
+  BSIM3 Fatal **error** Effective channel length <= 0
+  BSIM3 Fatal **error** Effective channel length for C-V <= 0
 
           ***** job aborted
 1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
  ******  
- .include '90nm.sp'                                                             
+ .title_and_gate                                                                
   ******  job statistics summary           tnom=  25.000 temp=  25.000          
  ******  
 
            total memory used        145 kbytes
 
-  # nodes =       0 # elements=       6
+  # nodes =       6 # elements=       6
   # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       2
   # va device =       0
 
     analysis           time    # points   tot. iter  conv.iter
 
     op point           0.00           1           0
-    readin             0.08
-    errchk             0.02
+    transient          0.00          11           0           0 rev=         0
+    readin             0.01
+    errchk             0.00
     setup              0.00
     output             0.00
-           total cpu time          0.09 seconds
+           total cpu time          0.01 seconds
            total elapsed time         1 seconds
-               job started at  09:57:56 11/23/2010
-               job ended   at  09:57:56 11/23/2010
+               job started at  14:09:49 11/24/2010
+               job ended   at  14:09:49 11/24/2010
 
 
  Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini

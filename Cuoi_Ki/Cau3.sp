@@ -1,4 +1,5 @@
-.include '90nm.sp'
+.title_inverter
+.include '180nm.pm'
 .option post
 mpmos	out	in	vdd	vdd	pmos	w=360n	l=180n
 mnmos	out	in	gnd	gnd	nmos	w=180n	l=180n
