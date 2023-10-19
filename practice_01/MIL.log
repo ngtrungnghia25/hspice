@@ -1,0 +1,29 @@
+pnlAddPane();
+nil
+1
+designOpen("e:\\programing\\hspice\\practice_01\\cau2.sp");
+"D0"
+t
+pnlAddCurve(1, node(D0,"A0","v(0)"), node(D0,"A0","TIME"));
+nil
+pnlAddCurve(1, node(D0,"A0","v(1)"), node(D0,"A0","TIME"));
+nil
+pnlAddCurve(1, node(D0,"A0","i(v1)"), node(D0,"A0","TIME"));
+nil
+pnlUnselectPane(1, 0);
+nil
+pnlSelectPane(1);
+nil
+pnlUnselectPane(1, 0);
+nil
+pnlSelectPane(1);
+nil
+pnlUnselectPane(1, 0);
+nil
+pnlSelectPane(1);
+nil
+quit();
+exit
+pnlDeletePane(1, 1);
+nil
+nil
