@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
+.TITLE '.title_hspice tutorial'
+ tdr              tdf              temper           alter#            
+ -3.565915e-11     3.929787e-11      25.0000000        1.0000000      

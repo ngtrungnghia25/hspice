@@ -1,0 +1,119 @@
+ ****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+  Copyright (C) 2008 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement found in:
+    C:\synopsys\Hspice_A-2008.03\license.warn
+  Use of this program is your acceptance to be bound by this 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: e:\dropbox\inverter\inverter.sp                                   
+ Init: read install configuration file: C:\synopsys\Hspice_A-2008.03\meta.cfg
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+
+
+
+
+
+ *****hspice simulation options*****
+ .option post nomod brief measdgt=7 captab
+  **warning** (180nm.pm:12)  model nmos            device geometries will not be checked against the limits set bylmin, lmax, wmin and wmax. To enable this check, add a period(.)to the model name(i.e. enable model selector).
+  **warning** (180nm.pm:71)  model pmos            device geometries will not be checked against the limits set bylmin, lmax, wmin and wmax. To enable this check, add a period(.)to the model name(i.e. enable model selector).
+
+ ***********************************************************************
+ ** runlvl is invoked, you can disable it by:
+      a) Add option runlvl=0 to your current simulation job.
+      b) Copy $installdir/hspice.ini to your HOME directory and
+         customize it by adding option runlvl=0, which disables
+         it for all of your simulation jobs.
+      c) Re-invoke $installdir/bin/config program and unselect the
+         option runlvl setting in box 'hspice.ini' which disables
+         it for whole group simulation jobs.
+
+ ** runlvl is invoked, some options are ignored or automatically set:
+      Options below are automatically set(user setting will overwrite them):
+      if runlvl=6,            .option bypass=0
+      if runlvl=[1|2|3|4|5],  .option bypass=2
+
+      Options below are ignored, they are replaced by automated algorithms:
+        lvltim    dvdt      ft    fast   trtol  absvar  relvar
+          relq  chgtol    dvtr    imin    itl3    rmax
+
+ ** runlvl is invoked, actual option value used by HSPICE are:
+       runlvl= 3       bypass= 2      mbypass=   2.00   bytol= 100.00u
+ ***********************************************************************
+
+
+ **warning** dc voltage reset to initial transient source value
+             in source        0:vin                 new dc=  0.0000D+00
+
+ 
+
+ Warning: Pd = 0 is less than W.
+ Model:    0:nmos
+ W = 1.2e-007, L = 9e-008
+
+ 
+      
+  Opening plot unit= 79
+ file=e:\dropbox\inverter\inverter.pa0                                         
+
+ ****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ .title_hspice tutorial                                                         
+  ******  operating point information      tnom=  25.000 temp=  25.000          
+ ******  
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:clkin   =   0.      0:clkout0 = 548.0382m 0:clkout1 = 729.2460m
+ +0:clkout2 = 807.4298m 0:clkout3 = 850.7304m 0:clkout4 = 921.5457m
+ +0:vdd     =   1.0000 
+
+
+ maximum nodal capacitance=   3.551E-15         on node     0:clkin           
+
+    nodal  capacitance table 
+
+    node    =    cap      node    =    cap      node    =    cap
+
+ +0:clkin   =   3.5512f 0:clkout0 = 154.6381a 0:clkout1 = 260.7190a
+ +0:clkout2 = 369.7819a 0:clkout3 = 479.8057a 0:clkout4 = 922.6312a
+ +0:vdd     =   2.4812f
+
+ 
+ ******  
+ .title_hspice tutorial                                                         
+  ******  transient analysis               tnom=  25.000 temp=  25.000          
+ ******  
+ tdr= -35.6591483p  targ=   7.6143409n   trig=   7.6500000n
+ tdf=  39.2978734p  targ=  10.1892979n   trig=  10.1500000n
+
+          ***** job concluded
+ ****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ .title_hspice tutorial                                                         
+  ******  job statistics summary           tnom=  25.000 temp=  25.000          
+ ******  
+
+           total memory used        167 kbytes
+
+  # nodes =       8 # elements=      12
+  # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =      10
+  # va device =       0
+
+    analysis           time    # points   tot. iter  conv.iter
+
+    op point           0.22           1           6
+    dc sweep           0.11         101         206
+    transient          0.22       30001         438         191 rev=        17
+    readin             0.39
+    errchk             0.19
+    setup              0.09
+    output             0.02
+           total cpu time          1.36 seconds
+           total elapsed time         2 seconds
+               job started at  19:42:26 02/26/2018
+               job ended   at  19:42:28 02/26/2018
+
+
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini

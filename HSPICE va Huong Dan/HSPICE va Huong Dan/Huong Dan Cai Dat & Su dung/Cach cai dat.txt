@@ -1,0 +1,13 @@
+Buoc 1: Cai phan mem binh thuong (Nhap dup vao file hspice_vA-2008.03_Win_setup.exe va tien hanh cai dat)
+
+Buoc 2: Vao thu muc "crack", copy file HSPICERF.EXE vao thu muc "..\Hspice_A-2008.03\BIN"
+
+Buoc 3: Vao thu muc goc "C" tao ra thu muc "C:\Flexlm"
+
+Buoc 4: Vao lai thu muc "crack", copy hai file "license_hspice.dat" va "hspice_2007-09.lic" vao thu muc "C:\Flexlm"
+
+Buoc 5: Click chuot phai vao "My Computer", chon "Properties". Chon "Advanced System Settings", Chon tab "Advanced" va chon "Environment Variables...".
+	O phan "User variable for ...", chon "New..."
+	
+	Variable name: LM_LICENSE_FILE
+	Variable value: C:\Flexlm\Hspice_2007-09.lic

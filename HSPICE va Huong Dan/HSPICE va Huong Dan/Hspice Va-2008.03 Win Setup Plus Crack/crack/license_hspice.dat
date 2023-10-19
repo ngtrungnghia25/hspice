@@ -1,0 +1,24 @@
+FEATURE hspice avantd 2020.0 permanent uncounted 6A96B8889013 HOSTID=ANY
+FEATURE avanwaveswin avantd 2020.0 permanent uncounted 6C4D8056C186 HOSTID=ANY
+FEATURE metawaveswin avantd 2020.0 permanent uncounted 888753445293 HOSTID=ANY
+FEATURE avanwaves avantd 2020.0 permanent uncounted 157195275A61 HOSTID=ANY
+FEATURE metawaves avantd 2020.0 permanent uncounted 77DD2A5D0DC8 HOSTID=ANY
+FEATURE hspicewin avantd 2020.0 permanent uncounted 26F03DEB9F8B HOSTID=ANY
+FEATURE vlsi2000 avantd 2020.0 permanent uncounted 07DB1FFA40F8 HOSTID=ANY
+FEATURE vlsi500 avantd 2020.0 permanent uncounted 117C2C46A5FF HOSTID=ANY
+FEATURE hsptest avantd 2020.0 permanent uncounted D4ACFD6EC648 HOSTID=ANY
+FEATURE gemini_hspice avantd 2020.0 permanent uncounted 6CF3659D19A8 HOSTID=ANY
+FEATURE cdsaawaves avantd 2020.0 permanent uncounted 04F057FE28E6 HOSTID=ANY
+FEATURE psf avantd 2020.0 permanent uncounted 08E662AAFDF8 HOSTID=ANY
+FEATURE sda avantd 2020.0 permanent uncounted A422518B30A9 HOSTID=ANY
+FEATURE cosmos_scope avantd 2020.0 permanent uncounted A0D006CB2F0F HOSTID=ANY
+
+PACKAGE TeamEFAStarHSPICE avantd 2007.03 C4100D8AE791 COMPONENTS=" hspice_gui hspice encrypt \
+hspicewin hsptest vlsi500 vlsi2000 gemini_hspice metawaveswin metawaves avanwaves \
+avanwaveswin hspicerf hspice_rf hspice_adv hspice_rf_char hspicext hsp-vacomp hspiceva HSPICE_GUI hspicecmirt \
+hspicecmidev hspice-XO " ck=***
+
+#Below are feature informations
+FEATURE TeamEFAStarHSPICE avantd 2007.03 31-dec-2050 uncounted CB076C9B1B1B HOSTID=ANY ck=***
+
+

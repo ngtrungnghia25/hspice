@@ -1,0 +1,20 @@
+* "simulator" "HSPICE" 
+* "version" "A-2008.03 32-BIT"
+* "format" "HSP"
+* "rundate" "19:42:26 02/26/2018 "
+* "netlist" "e:\dropbox\inverter\inverter.sp "
+* "runtitle" ".title_hspice tutorial"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clkin =   0.            
++ clkout0 = 548.0382m       
++ clkout1 = 729.2460m       
++ clkout2 = 807.4298m       
++ clkout3 = 850.7304m       
++ clkout4 = 921.5457m       
++ vdd =   1.0000        
+***   END: Saved Operating Point ***                     

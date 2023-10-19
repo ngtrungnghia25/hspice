@@ -1,0 +1,15 @@
+pnlAddPane();
+nil
+1
+designOpen("e:\\dropbox\\inverter\\inverter.sp");
+"D0"
+t
+pnlAddCurve(1, node(D0,"A0","v(clkin)"), node(D0,"A0","TIME"));
+nil
+pnlAddCurve(1, node(D0,"A0","v(clkout0)"), node(D0,"A0","TIME"));
+nil
+quit();
+exit
+pnlDeletePane(1, 1);
+nil
+nil

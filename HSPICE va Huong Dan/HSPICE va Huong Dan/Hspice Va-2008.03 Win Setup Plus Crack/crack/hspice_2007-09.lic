@@ -1,0 +1,8 @@
+PACKAGE EFA_Synopsys_HSPICE snpslmd 2007.9 90D0F0314ADF388A338A COMPONENTS="hspice_gui hspice \
+   encrypt hspicewin hsptest vlsi500 vlsi2000 gemini_hspice metawaveswin metawaves avanwaves \
+   avanwaveswin hspice_cosim scratch hspicerf hspice_rf hspice_adv hspice_rf_char hspicext \
+   hspicecmirt hspicecmidev hspice-XO hspice3des metaencrypt3des hspiceva Cosmos_scope" ck=201
+FEATURE EFA_Synopsys_HSPICE snpslmd 2007.9 31-dec-2020 uncounted AD47C1C891DA5D596A45 \
+   VENDOR_STRING=^1Platform:ALL+S HOSTID=INTERNET=*.*.*.* SUPERSEDE ISSUER="Team EFA 2007" \
+   ISSUED=24-Sep-2007 ck=212 SN=SL:2100-0:100000:0 START=24-sep-2007
+   
