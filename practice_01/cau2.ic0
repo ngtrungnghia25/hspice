@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "A-2008.03 32-BIT"
 * "format" "HSP"
-* "rundate" "12:52:48 10/21/2009 "
+* "rundate" "10:03:29 10/24/2010 "
 * "netlist" "e:\programing\hspice\practice_01\cau2.sp "
 * "runtitle" ".option post"
 * time =    0.            
@@ -11,4 +11,5 @@
 + gmindc=   1.0000p       
 .nodeset
 + 1 =  -5.0000        
++ 2 =  -5.0000        
 ***   END: Saved Operating Point ***                     

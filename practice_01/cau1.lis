@@ -75,16 +75,16 @@
 
     analysis           time    # points   tot. iter  conv.iter
 
-    op point           0.00           1           3
-    transient          0.06        1001         490         245 rev=         0
-    readin             0.00
-    errchk             0.02
-    setup              0.00
+    op point           0.01           1           3
+    transient          0.23        1001         490         245 rev=         0
+    readin             0.01
+    errchk             0.00
+    setup              0.12
     output             0.00
-           total cpu time          0.11 seconds
+           total cpu time          0.43 seconds
            total elapsed time         1 seconds
-               job started at  12:00:56 10/21/2010
-               job ended   at  12:00:56 10/21/2010
+               job started at  10:25:57 10/24/2010
+               job ended   at  10:25:58 10/24/2010
 
 
  Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini

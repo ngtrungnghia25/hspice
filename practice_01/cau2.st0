@@ -3,7 +3,7 @@
  lic:
  lic: FLEXlm: v8.5b
  lic: USER:   TRUNG-NGHIA          HOSTNAME: TRUNG-NGHIA
- lic: HOSTID: "3085a9995677 503eaa4bfef2 523eaa4bfef2 503eaa4bfef2" PID:      54
+ lic: HOSTID: "3085a9995677 503eaa4bfef2 523eaa4bfef2 503eaa4bfef2" PID:      59
  lic: Using FLEXlm license file:
  lic: C:\Flexlm\Hspice_2007-09.lic
  lic: Checkout 1 hspice
@@ -11,94 +11,17 @@
  lic: NODE LOCKED license on hostid "3085a9995677 503eaa4bfef2 523eaa4bfef2 503e
  lic:
  Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
- init: begin read circuit files,  cpu clock=  1.10E-01
- init: end read circuit files,  cpu clock=  1.10E-01 memory=     14 kb
- init: begin check errors,  cpu clock=  1.10E-01
- init: end check errors,  cpu clock=  1.26E-01 memory=     14 kb
- init: begin setup matrix, pivot=    10 cpu clock=  1.26E-01
-       establish matrix -- done,  cpu clock=  1.26E-01 memory=     14 kb
-       re-order matrix -- done,  cpu clock=  1.26E-01 memory=     14 kb
- init: end setup matrix,  cpu clock=  1.26E-01 memory=     22 kb
- dcop: begin dcop,  cpu clock=  1.73E-01
- dcop: begin pseudo transient
- dcop: ...failed with time step too small
- dcop: end pseudo transient
- dcop: begin gshunt ramping
- dcop: gshunt =      0.1000000E-03
- dcop: gshunt =      0.5050000E-03
- dcop: gshunt =      0.7277500E-03
- dcop: gshunt =      0.8502625E-03
- dcop: gshunt =      0.9176444E-03
- dcop: gshunt =      0.9547044E-03
- dcop: gshunt =      0.9750874E-03
- dcop: gshunt =      0.9862981E-03
- dcop: gshunt =      0.9924639E-03
- dcop: gshunt =      0.9958552E-03
- dcop: gshunt =      0.9977203E-03
- dcop: gshunt =      0.9987462E-03
- dcop: gshunt =      0.9993104E-03
- dcop: gshunt =      0.9996207E-03
- dcop: gshunt =      0.9997914E-03
- dcop: gshunt =      0.9998853E-03
- dcop: gshunt =      0.9999369E-03
- dcop: gshunt =      0.9999653E-03
- dcop: gshunt =      0.9999809E-03
- dcop: gshunt =      0.9999895E-03
- dcop: gshunt =      0.9999942E-03
- dcop: gshunt =      0.9999968E-03
- dcop: gshunt =      0.9999983E-03
- dcop: gshunt =      0.9999990E-03
- dcop: gshunt =      0.9999995E-03
- dcop: gshunt =      0.9999997E-03
- dcop: gshunt =      0.9999998E-03
- dcop: gshunt =      0.9999999E-03
- dcop: gshunt ramping failed
- dcop: end dcop,  cpu clock=  6.75E-01 memory=     22 kb  tot_iter=   24122
- output: e:\programing\hspice\practice_01\cau2.tr0
- sweep: tran tran0    begin, stop_t=  1.00E-09 #sweeps=  11 cpu clock=  6.91E-01
- **warning**  internal timestep too small in transient analysis
- sweep: tran tran0    end,  cpu clock=  7.06E-01 memory=     23 kb
-       establish matrix -- done,  cpu clock=  7.06E-01 memory=     22 kb
-       re-order matrix -- done,  cpu clock=  7.22E-01 memory=     22 kb
- dcop: begin dcop,  cpu clock=  7.22E-01
- dcop: begin pseudo transient
- dcop: ...failed with time step too small
- dcop: end pseudo transient
- dcop: begin gshunt ramping
- dcop: gshunt =      0.1000000E-03
- dcop: gshunt =      0.5050000E-03
- dcop: gshunt =      0.7277500E-03
- dcop: gshunt =      0.8502625E-03
- dcop: gshunt =      0.9176444E-03
- dcop: gshunt =      0.9547044E-03
- dcop: gshunt =      0.9750874E-03
- dcop: gshunt =      0.9862981E-03
- dcop: gshunt =      0.9924639E-03
- dcop: gshunt =      0.9958552E-03
- dcop: gshunt =      0.9977203E-03
- dcop: gshunt =      0.9987462E-03
- dcop: gshunt =      0.9993104E-03
- dcop: gshunt =      0.9996207E-03
- dcop: gshunt =      0.9997914E-03
- dcop: gshunt =      0.9998853E-03
- dcop: gshunt =      0.9999369E-03
- dcop: gshunt =      0.9999653E-03
- dcop: gshunt =      0.9999809E-03
- dcop: gshunt =      0.9999895E-03
- dcop: gshunt =      0.9999942E-03
- dcop: gshunt =      0.9999968E-03
- dcop: gshunt =      0.9999983E-03
- dcop: gshunt =      0.9999990E-03
- dcop: gshunt =      0.9999995E-03
- dcop: gshunt =      0.9999997E-03
- dcop: gshunt =      0.9999998E-03
- dcop: gshunt =      0.9999999E-03
- dcop: gshunt ramping failed
- dcop: end dcop,  cpu clock=  9.57E-01 memory=     23 kb  tot_iter=   48244
- output: e:\programing\hspice\practice_01\cau2.tr0
- sweep: tran tran0    begin, stop_t=  1.00E-09 #sweeps=  11 cpu clock=  9.72E-01
- **error**  internal timestep too small in transient analysis
- sweep: tran tran0    end,  cpu clock=  9.72E-01 memory=     23 kb
->error          ***** hspice job aborted
+ init: begin read circuit files,  cpu clock=  7.10E-02
+ init: end read circuit files,  cpu clock=  7.30E-02 memory=    145 kb
+ init: begin check errors,  cpu clock=  7.30E-02
+ init: end check errors,  cpu clock=  7.70E-02 memory=    146 kb
+ init: begin setup matrix, pivot=    10 cpu clock=  7.70E-02
+       establish matrix -- done,  cpu clock=  8.00E-02 memory=    146 kb
+       re-order matrix -- done,  cpu clock=  8.20E-02 memory=    147 kb
+ init: end setup matrix,  cpu clock=  8.40E-02 memory=    156 kb
+ output: e:\programing\hspice\practice_01\cau2.sw0
+ sweep: dc dc0    begin, #sweeps=  75 cpu clock=  8.80E-02
+ sweep: dc dc0    end,  cpu clock=  9.10E-02 memory=    156 kb
+>info:         ***** hspice job concluded
  Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
  lic: Release hspice token(s)
