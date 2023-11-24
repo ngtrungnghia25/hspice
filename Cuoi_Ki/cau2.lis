@@ -1,0 +1,422 @@
+ ****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+  Copyright (C) 2008 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement found in:
+    C:\synopsys\Hspice_A-2008.03\license.warn
+  Use of this program is your acceptance to be bound by this 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: e:\programing\hspice\cuoi_ki\cau2.sp                              
+ Init: read install configuration file: C:\synopsys\Hspice_A-2008.03\meta.cfg
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+
+
+
+
+ .option post
+ vgs g gnd
+ vds d gnd
+ m1 d g gnd gnd nmos w=100n l=50n
+ .dc vds 0 1.0 0.05 sweep vgs 0 1.0 0.2
+ .model nmos nmos (                                level   = 54
+ +version = 4.3            binunit = 1              mobmod  = 2
+ +rdsmod  = 0              capmod  = 2              epsrox  = 3.9
+ +toxe    = 2.2e-9         ngate   = 1e20           rsh     = 7.2
+ +vth0    = 0.2637059      k1      = 0.5459903      k2      = -0.106347
+ +k3      = 1.00071e-3     k3b     = 8.2559564      w0      = 1e-10
+ +lpe0    = 8.09095e-8     lpeb    = 6.541354e-8    dvt0    = 0.0241091
+ +dvt1    = 0.0354959      dvt2    = -5.083204e-5   dvtp0   = 0
+ +dvtp1   = 0              dvt0w   = 0              dvt1w   = 0
+ +dvt2w   = -0.032         u0      = 180.5863743    ua      = 5.007749e-15
+ +ub      = 1e-26          uc      = -1e-10         eu      = 0.1098817
+ +vsat    = 7.526087e5     a0      = 2              ags     = 0
+ +b0      = 1.248816e-6    b1      = 1e-7           keta    = 0.05
+ +a1      = 0              a2      = 1              wint    = 4.513582e-15
+ +lint    = 3.004861e-12   dwg     = -2.358907e-8   dwb     = 4.286229e-8
+ +voff    = -0.0349398     nfactor = 1.9128092      eta0    = 2.9476e-3
+ +etab    = -0.0117687     dsub    = 0.1841044      cit     = 0
+ +cdsc    = 2.4e-4         cdscb   = 0              cdscd   = 0
+ +pclm    = 0.4020828      pdiblc1 = 0.6278172      pdiblc2 = 0.01
+ +pdiblcb = -1e-3          drout   = 0.6771686      pscbe1  = 5.552668e8
+ +pscbe2  = 3.09264e-6     pvag    = 0.0491186      delta   = 1.741612e-3
+ +fprout  = 1.689547e-4    rdsw    = 100            rdswmin = 100
+ +rdw     = 100            rdwmin  = 0              rsw     = 100
+ +rswmin  = 0              prwg    = 3              prwb    = 0.0996955
+ +wr      = 1              xpart   = 0.5            cgso    = 1e-10
+ +cgdo    = 1e-10          cgbo    = 0              cf      = 0
+ +cjs     = 8.93e-4        cjd     = 8.93e-4        mjs     = 0.3003
+ +mjd     = 0.3003         mjsws   = 0.2357         mjswd   = 0.2357
+ +cjsws   = 1.59e-10       cjswd   = 1.59e-10       cjswgs  = 3.065074e-11
+ +cjswgd  = 3.065074e-11   mjswgs  = 0.1757671      mjswgd  = 0.1757671
+ +pb      = 0.4697817      pbsws   = 0.4            pbswd   = 0.4
+ +pbswgs  = 0.429054       pbswgd  = 0.429054       tnom    = 27
+ +wketa   = 0.039914       pketa   = -1.059394e-3   peta0   = 0
+ +pvsat   = 1.838993e3     saref   = 5.5e-7         sbref   = 5.5e-7
+ +steta0  = 0              lodk2   = 1              wlod    = 2e-6
+ +ku0     = -4e-7          kvsat   = 0.01           kvth0   = 1e-9
+ +llodku0 = 1.0867072      stimod  = 2              wlodku0 = 1.0990864
+ +llodvth = 1              wlodvth = 1              lku0    = 1e-6
+ +wku0    = 1e-6           lodeta0 = 1              lkvth0  = 1.1e-7
+ +wkvth0  = 1.1e-7         pkvth0  = 0              stk2    = 0               )
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ .temp 70                                                                       
+  ******  mos   model parameters           tnom=  25.000 temp=  25.000          
+ ******  
+ 
+Model Name: nmos  
+
+ BSIM4 Model (Level 54)
+
+    MOBMOD = 2
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 0
+    RGATEMOD = 0
+    PERMOD = 1
+    GEOMOD = 0
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 0
+    IGBMOD = 0
+    STIMOD = 2
+    VBFWDMOD = 0
+    VERSION =    4.3 
+    TOXREF = 3e-009 
+    TOXE = 2.2e-009 
+    TOXP = 2.2e-009 
+    TOXM = 2.2e-009 
+    DTOX =      0 
+    EPSROX =    3.9 
+    CDSC = 0.00024 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =  1.913 
+    XJ = 1.5e-007 
+    VSAT = 7.526e+005 
+    A0 =      2 
+    AGS =      0 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+004 
+    KETA =   0.05 
+    NSUB = 6e+016 
+    NDEP = 1.7e+017 
+    NSD = 1e+020 
+    NGATE = 1e+020 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-007 
+    K1 =  0.546 
+    KT1 =  -0.11 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 = -0.1063 
+    K3 = 0.001001 
+    K3B =  8.256 
+    LPE0 = 8.091e-008 
+    LPEB = 6.541e-008 
+    DVTP0 =      0 
+    DVTP1 =      0 
+    W0 = 1e-010 
+    DVT0 = 0.02411 
+    DVT1 = 0.0355 
+    DVT2 = -5.083e-005 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W = -0.032 
+    DROUT = 0.6772 
+    DSUB = 0.1841 
+    VTH0 = 0.2637 
+    EU = 0.1099 
+    UA = 5.008e-015 
+    UA1 = 1e-009 
+    UB = 1e-026 
+    UB1 = -1e-018 
+    UC = -1e-010 
+    UC1 = -5.6e-011 
+    U0 =  180.6 
+    UTE =   -1.5 
+    VOFF = -0.03494 
+    VOFFL =      0 
+    MINV =      0 
+    FPROUT = 0.000169 
+    PDITS =      0 
+    PDITSD =      0 
+    PDITSL =      0 
+    DELTA = 0.001742 
+    RDSW =    100 
+    RDSWMIN =    100 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =    100 
+    RSW =    100 
+    PRWG =      3 
+    PRWB = 0.0997 
+    PRT =      0 
+    ETA0 = 0.002948 
+    ETAB = -0.01177 
+    PCLM = 0.4021 
+    PDIBLC1 = 0.6278 
+    PDIBLC2 =   0.01 
+    PDIBLCB = -0.001 
+    PSCBE1 = 5.553e+008 
+    PSCBE2 = 3.093e-006 
+    PVAG = 0.04912 
+    WR =      1 
+    DWG = -2.359e-008 
+    DWB = 4.286e-008 
+    XW =      0 
+    XWREF =      0 
+    XL =      0 
+    XLREF =      0 
+    B0 = 1.249e-006 
+    B1 = 1e-007 
+    ALPHA0 =      0 
+    ALPHA1 =      0 
+    AGIDL =      0 
+    BGIDL = 2.3e+009 
+    CGIDL =    0.5 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC =   0.43 
+    BIGC =  0.054 
+    CIGC =  0.075 
+    AIGSD =   0.43 
+    BIGSD =  0.054 
+    CIGSD =  0.075 
+    AIGBACC =   0.43 
+    BIGBACC =  0.054 
+    CIGBACC =  0.075 
+    AIGBINV =   0.35 
+    BIGBINV =   0.03 
+    CIGBINV =  0.006 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      1 
+    BETA0 =     30 
+    IJTHDFWD =    0.1 
+    IJTHSFWD =    0.1 
+    IJTHDREV =    0.1 
+    IJTHSREV =    0.1 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB =     -1 
+    GBMIN = 1e-012 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL =      0 
+    CGDL =      0 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF =      0 
+    CLC = 1e-007 
+    CLE =    0.6 
+    DWC = 4.514e-015 
+    DLC = 3.005e-012 
+    DLCIG = 3.005e-012 
+    DWJ = 4.514e-015 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =      1 
+    VOFFCV =      0 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ =      0 
+    TPB =      0 
+    TCJSW =      0 
+    TPBSW =      0 
+    TCJSWG =      0 
+    TPBSWG =      0 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL = 2e-006 
+    SW = 2e-006 
+    K =      0 
+    WKETA = 0.03991 
+    PVSAT =   1839 
+    PKETA = -0.001059 
+    TNOM =  300.1 
+    CGSO = 1e-010 
+    CGDO = 1e-010 
+    CGBO =      0 
+    XPART =    0.5 
+    RSH =    7.2 
+    JSS = 0.0001 
+    JSWS =      0 
+    JSWGS =      0 
+    PBS =      1 
+    MJS = 0.3003 
+    PBSWS =    0.4 
+    MJSWS = 0.2357 
+    CJS = 0.000893 
+    CJSWS = 1.59e-010 
+    NJS =      1 
+    PBSWGS = 0.4291 
+    MJSWGS = 0.1758 
+    CJSWGS = 3.065e-011 
+    XTIS =      3 
+    JSD = 0.0001 
+    JSWD =      0 
+    JSWGD =      0 
+    PBD =      1 
+    MJD = 0.3003 
+    PBSWD =    0.4 
+    MJSWD = 0.2357 
+    CJD = 0.000893 
+    CJSWD = 1.59e-010 
+    NJD =      1 
+    PBSWGD = 0.4291 
+    MJSWGD = 0.1758 
+    CJSWGD = 3.065e-011 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 3.005e-012 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = 4.514e-015 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+041 
+    NOIB = 3.125e+026 
+    NOIC = 8.75e+009 
+    EM = 4.1e+007 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+    TEMPMOD  =      0 
+    LAMBDA   =      0 
+    VTL      = 2e+005 m/s
+    LC       = 5e-009 
+    XN       =      3 
+    LLAMBDA  =      0 
+    LVTL     =      0 
+    LXN      =      0 
+    WLAMBDA  =      0 
+    WVTL     =      0 
+    WXN      =      0 
+    PLAMBDA  =      0 
+    PVTL     =      0 
+    PXN      =      0 
+    RNOIA    =  0.577 
+    RNOIB    =   0.37 
+    SAREF(SA0) = 5.5e-007 m
+    SBREF(SB0) = 5.5e-007 m
+    WLOD     = 2e-006 m
+    KU0      = -4e-007 1/m
+    KVSAT    =   0.01 
+    KVTH0    = 1e-009 m
+    TKU0     =      0 
+    LLODKU0  =  1.087 
+    WLODKU0  =  1.099 
+    LLODVTH  =      1 
+    WLODVTH  =      1 
+    LKU0     = 1e-006 
+    WKU0     = 1e-006 
+    PKU0     =      0 
+    LKVTH0   = 1.1e-007 
+    WKVTH0   = 1.1e-007 
+    PKVTH0   =      0 
+    STK2     =      0 
+    LODK2    =      1 
+    STETA0   =      0 
+    LODETA0  =      1 
+    LXRCRG1  =      0 
+    WXRCRG1  =      0 
+    PXRCRG1  =      0 
+    LXRCRG2  =      0 
+    WXRCRG2  =      0 
+    PXRCRG2  =      0 
+ 
+
+ 
+      
+
+          ***** job concluded
+
+          ***** job concluded
+
+          ***** job concluded
+
+          ***** job concluded
+
+          ***** job concluded
+
+          ***** job concluded
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ .temp 70                                                                       
+  ******  job statistics summary           tnom=  25.000 temp=  25.000          
+ ******  
+
+           total memory used        155 kbytes
+
+  # nodes =       3 # elements=       3
+  # diodes=       0 # bjts    =       0 # jfets   =       0 # mosfets =       1
+  # va device =       0
+
+    analysis           time    # points   tot. iter  conv.iter
+
+    op point           0.00           1           0
+    dc sweep           0.06         126         258
+    readin             0.00
+    errchk             0.00
+    setup              0.00
+    output             0.00
+           total cpu time          0.12 seconds
+           total elapsed time         1 seconds
+               job started at  11:57:58 11/22/2010
+               job ended   at  11:57:58 11/22/2010
+
+
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini

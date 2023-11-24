@@ -1,10 +1,16 @@
 pnlAddPane();
 nil
 1
-designOpen("e:\\programing\\hspice\\practice_01\\cau3.sp");
+designOpen("e:\\programing\\hspice\\practice_01\\cau1.sp");
 "D0"
 t
-pnlAddCurve(1, node(D0,"A0","i(vin)"), node(D0,"A0","TIME"));
+pnlAddCurve(1, node(D0,"A0","v(0)"), node(D0,"A0","TIME"));
+nil
+pnlAddCurve(1, node(D0,"A0","v(1)"), node(D0,"A0","TIME"));
+nil
+pnlAddCurve(1, node(D0,"A0","v(2)"), node(D0,"A0","TIME"));
+nil
+pnlAddCurve(1, node(D0,"A0","v(3)"), node(D0,"A0","TIME"));
 nil
 quit();
 exit
