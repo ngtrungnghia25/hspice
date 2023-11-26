@@ -1,0 +1,34 @@
+Lời đầu tiên cho em xin phép chào Thầy, anh chị và các bạn
+Em tên là Nguyễn Trung Nghĩa sinh viên khoá 48 chuyên ngành Kỹ thuật máy tính
+Nay em đến đây để trình bài về đồ án mô phỏng linh kiện bán dẫn của mình
+Nội dung thì gồm có 4 phần
+	Phần 1 là ...
+	Phần 2 là ...
+	Phần 3 là ...
+	Phần 4 là mô phỏng mạch có mosfet và vẽ layout bằng microwind
+		Ở đây thì em chọn mô phỏng 2 cổng logic là And và Or
+Đi vào nội dung phần 1, đặc tuyến của BJT
+	Mạch gồm có 1 nguồn điện thế, nguồn dòng và 1 con BJT loại N mắc như hình
+	Tiếp đây là mã HSPICE
+	....
+	Sau đây là tín hiệu mô phỏng, mọi người có thể xem
+Sang phần 2 là đặc tuyến của MOSFET, ở đây mình dùng công nghệ chế tạo 180nm
+	Đây là sơ đồ mạch gồm có 2 nguồn, và 1 mosfet mắc như hình
+	Còn đây là mã HSPICE
+		Nhiệt độ mô phỏng là 70
+		Width và lenght lần lượt là 100n và 50n
+	Tiếp là tín hiệu ghi nhận được khi mô phỏng
+Đến phần 3 là mô phỏng 1 cổng đảo và vẽ layout
+	Mạch gồm 1 PMOS và NMOS mắc như hình 
+	Đây là ngõ vào, ngõ ra
+	Sau đây là mã HSPICE
+		Công nghệ chế tạo 180nm
+		Width lenght PMOS là 360n và 180n
+		Width lenght NMOS là 180n
+		Cấp nguồn Vdd 1V
+		Truyền xung vuông cho ngõ vào in
+		Thời gian mô phỏng là 10n với độ chia mỗi ô là 1n
+	Tiếp đây là tín hiệu mô phỏng
+		Như mọi người cũng thấy là khi tín hiệu vào 1 thì nó ra 0 và ngược lại
+	Kế là layout được vẽ bằng  microwind
+Đến phần 4...
